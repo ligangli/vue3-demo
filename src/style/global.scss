@@ -1,0 +1,40 @@
+// 定义基础屏幕分辨率变量
+$vw_base: 4800;
+$vh_base: 1620;
+
+// 计算视口宽度,vw()中的参数，直接传像素值
+@function vw($px) {
+    @return ($px / $vw_base) * 100vw;
+}
+
+// 计算视口高度, vh()中的参数，直接传像素值
+@function vh($px) {
+    @return ($px / $vh_base) * 100vh;
+}
+
+// 全局主题色
+$theme-white-color: #ffffff;
+
+* {
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**
+    flex 函数
+ */
+@mixin flex($justify:center, $align:center, $directions:row, $shrink:0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $directions;
+    flex-shrink: $shrink;
+}
+video{
+    object-fit: fill;
+}
