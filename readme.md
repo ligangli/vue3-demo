@@ -7,8 +7,9 @@
 # 静态文件复制
 # 将package.json内build改为vite build && node src/utils/move.js
 # move.js改为自己的静态文件目录
-
+```
 vue3-demo
+
 ├─ .env                                                     
 ├─ .env.development                                         # 开发环境
 ├─ .env.production                                          # 生产环境
